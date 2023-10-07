@@ -27,17 +27,41 @@ function Announcement() {
           {/* <Button variant="primary">Go somewhere</Button> */}
         </>
       );
-    } else if (activeTab === '#link') {
+    } else if (activeTab === '#second') {
       return (
         <>
-          <Card.Title>Link Tab Content</Card.Title>
+          <Card.Title>second Tab Content</Card.Title>
           <Card.Text>
-            <p>* Tenders </p>
-            <p>* Recruitment </p>
-            <p>* Temple Staff Details </p>
-            <p>* Green Vari Program </p>
-            <p>* Yearly Report </p>
-            <p>* Suggestions from Devotees for temple facilities </p>
+            <p><a href="#">* Tenders</a> </p>
+            <p><a href="#">* Recruitment</a> </p>
+            <p><a href="#">* Temple Staff Details </a></p>
+            <p><a href="#">* Green Vari Program</a> </p>
+            <p><a href="#">* Yearly Report</a> </p>
+            <p><a href="#">* Suggestions from Devotees for temple facilities </a></p>
+          </Card.Text>
+        </>
+      );
+    } else if (activeTab === '#third') {
+      return (
+        <>
+          <Card.Title>third Tab Content</Card.Title>
+          <Card.Text>
+            <p><a href="#">* Online Darshan </a></p>
+            <p><a href="#">* Online Donation</a></p>
+            <p><a href="#">* Darshan Booking Pass</a></p>
+            <p><a href="#">* Online Donation By QR Code</a></p>
+            <p><a href="#">* Online Donation (SBI Collect)</a></p>
+          </Card.Text>
+        </>
+      );
+    } else if (activeTab === '#fourth') {
+      return (
+        <>
+          <Card.Title>fourth Tab Content</Card.Title>
+          <Card.Text>
+            <p><a href="#">* Bhakta Nivas Gallery </a></p>
+            <p><a href="#">* Commmittee and Chairman</a></p>
+            <p><a href="#">* Advisors</a></p>
           </Card.Text>
         </>
       );
@@ -45,28 +69,29 @@ function Announcement() {
   };
 
   return (
-    <div className='ml-auto'>
-      <Card bg="dark" text="light" style={{ width: '36rem', marginLeft: '0px' }}>
+    <div >
+      <Card bg="" text="light" >
         <Card.Header >
           <Nav variant="tabs" activeKey={activeTab} onSelect={handleTabSelect}>
             <Nav.Item>
               <Nav.Link href="#first">Announcements</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#link">Important Updates</Nav.Link>
+              <Nav.Link href="#second">Important Updates</Nav.Link>
             </Nav.Item>
-            {/* <Nav.Item>
-            <Nav.Link href="#disabled" disabled>
-              Disabled
-            </Nav.Link>
-          </Nav.Item> */}
+            <Nav.Item>
+              <Nav.Link href="#third">Announcements</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="#fourth">Important Updates</Nav.Link>
+            </Nav.Item>
           </Nav>
         </Card.Header>
         <Card.Body>
           {renderTabContent()}
         </Card.Body>
       </Card>
-      <ImpLinks></ImpLinks>
+
     </div>
   );
 }

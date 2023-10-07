@@ -48,11 +48,10 @@ function Footer() {
             <Col md={3} lg={4} xl={3} className="mx-auto mb-4">
               {/* Content */}
               <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>Company name
+                <i className="fas fa-gem me-0"></i>SparkMind Ventures Pvt. Ltd.
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit.
+                Leading IT solution company dedicated to providing cutting-edge technology solutions tailored to meet the unique needs of businesses of all sizes. With a team of experienced professionals and a commitment to innovation, we empower organizations to thrive in the digital age.
               </p>
             </Col>
             {/* Grid column */}
@@ -103,7 +102,7 @@ function Footer() {
             <Col md={4} lg={3} xl={3} className="mx-auto mb-md-0 mb-4">
               {/* Links */}
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p><i className="fas fa-home me-3"></i> Hinjawadi phase1, Pune</p>
               <p>
                 <i className="fas fa-envelope me-3"></i>
                 info@example.com

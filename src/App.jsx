@@ -1,28 +1,46 @@
 import React from 'react';
-
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './About';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css'
+import Home from './Home';
+import TempleTimings from './TempleTimings';
+import Festivals from './Festivals';
+import Gallery from './Gallery';
+import Contact from './Contact';
+import History from './History';
 import NavB from './NavB';
-import Banner from './Banner';
-import DetailsCard from './DetailsCard'
-import GridExample from './GridExample'
+
 import Footer from './Footer';
 
 function App() {
-  return (
-    <>
-      <div className=''>
-        <Banner></Banner>
-        <NavB></NavB>
-        <DetailsCard></DetailsCard>
-        <br></br>
-        <GridExample></GridExample>
-      </div>
+    return (
+        <>
+            <div>
+                <NavB></NavB>
+            </div>
+            <div className="wrapper">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/temple-timings" element={<TempleTimings />} />
+                        <Route path="/temple-history" element={<History />} />
+                        <Route path="/our-festivals" element={<Festivals />} />
+                        <Route path="/photo-gallery" element={<Gallery />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </BrowserRouter>
+            </div>
 
-      <br></br>
-      <Footer></Footer>
-    </>
-  );
+            <div>
+                <br />
+                <Footer></Footer>
+            </div>
+
+        </>
+    );
 }
 
-export default App
+export default App;
