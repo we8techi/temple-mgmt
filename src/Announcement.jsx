@@ -83,7 +83,7 @@ function Announcement() {
               <Nav.Link href="#third">Announcements</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#fourth">Important Updates</Nav.Link>
+              <Nav.Link href="#fourth">General Updates</Nav.Link>
             </Nav.Item>
           </Nav>
         </Card.Header>

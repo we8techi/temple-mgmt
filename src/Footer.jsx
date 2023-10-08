@@ -105,10 +105,10 @@ function Footer() {
               <p><i className="fas fa-home me-3"></i> Hinjawadi phase1, Pune</p>
               <p>
                 <i className="fas fa-envelope me-3"></i>
-                info@example.com
+                we8techstartup@gmail.com
               </p>
-              <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p><i className="fas fa-phone me-3"></i> + 020 250 567 88</p>
+              <p><i className="fas fa-print me-3"></i> + 020 250 567 89</p>
             </Col>
             {/* Grid column */}
           </Row>
