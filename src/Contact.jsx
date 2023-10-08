@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 
+const templeAddress = `कार्यकारी अधिकारी,
+                विठ्ठल रुक्मिणी मंदिर समिती,
+                संत तुकाराम भवन,
+                (श्रीविठ्ठल मंदिराशेजारी)
+                पंढरपूर- ४१३३०४
+                जि.सोलापूर, महाराष्ट्र.
+                दुरध्वनी  - (०२१८६) २२४४६६,२२३५५०`;
+const templeEmail = "xyz@xyz.com";
+const addressLines = templeAddress.split("\n");
+
 function Contact() {
     // State to store form input values
     const [formData, setFormData] = useState({
@@ -27,15 +37,16 @@ function Contact() {
     return (
         <div className="container mt-5">
             <h3>संपर्क करा</h3>
-            <p>कार्यकारी अधिकारी,<br />
-                विठ्ठल रुक्मिणी मंदिर समिती,<br />
-                संत तुकाराम भवन,<br />
-                (श्रीविठ्ठल मंदिराशेजारी)<br />
-                पंढरपूर- ४१३३०४<br />
-                जि.सोलापूर, महाराष्ट्र<br />
-                दुरध्वनी  - (०२१८६) २२४४६६,२२३५५०</p>
+            <p>
+                {addressLines.map((line, index) => (
+                    <React.Fragment key={index}>
+                        {line}
+                        <br />
+                    </React.Fragment>
+                ))}
+            </p>
             <p>आपल्या प्रतिक्रिया खालील ईमेल पत्त्यांवर पाठवा. <br />
-                xyz@xyz.com  </p>
+                {templeEmail}  </p>
 
             <form onSubmit={handleSubmit}>
                 <div className="form-group">

@@ -69,7 +69,7 @@ function GridExample() {
     <Row xs={1} md={5} className="g-1">
       {cardData.map((card, idx) => (
         <Col key={idx}>
-          <Card bg="dark" text="light">
+          <Card bg="light" >
             <Card.Img variant="top" src={card.imageSrc} alt={`Card ${idx + 1}`} style={{ height: '100px' }} />
             <Card.Body>
               <Card.Title>{card.title}</Card.Title>

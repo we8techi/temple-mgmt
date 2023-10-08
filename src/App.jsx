@@ -9,6 +9,7 @@ import TempleTimings from './TempleTimings';
 import Festivals from './Festivals';
 import Gallery from './Gallery';
 import Contact from './Contact';
+import FormExample from './FormExample';
 import History from './History';
 import NavB from './NavB';
 
@@ -30,6 +31,7 @@ function App() {
                         <Route path="/our-festivals" element={<Festivals />} />
                         <Route path="/photo-gallery" element={<Gallery />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/passbooking" element={<FormExample />} />
                     </Routes>
                 </BrowserRouter>
             </div>
